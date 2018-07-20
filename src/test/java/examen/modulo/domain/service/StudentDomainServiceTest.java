@@ -1,9 +1,4 @@
-package banking.transactions.domain.service;
-
-import examen.modulo.domain.service.StudentDomainService;
-import static org.junit.Assert.assertEquals;
-
-import java.math.BigDecimal;
+package examen.modulo.domain.service;
 
 import org.junit.Before;
 import org.junit.Test;

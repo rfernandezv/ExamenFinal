@@ -3,7 +3,7 @@ package examen.modulo.application;
 
 import examen.common.application.Notification;
 import examen.modulo.domain.entity.Student;
-import examen.modulo.domain.repository.ModuloRepository;
+import examen.modulo.domain.repository.StudentRepository;
 import examen.modulo.domain.service.StudentDomainService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ public class StudentApplicationService {
     @Autowired
     private StudentDomainService moduloDomainService;
     @Autowired
-    private ModuloRepository moduloRepository;
+    private StudentRepository moduloRepository;
     
     public List<Student> findStudentByType(String typeStudent) throws Exception{
         Notification notification = this.validation(typeStudent);

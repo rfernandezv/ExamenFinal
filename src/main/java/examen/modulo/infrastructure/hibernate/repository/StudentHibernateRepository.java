@@ -6,7 +6,7 @@ import examen.modulo.domain.entity.Student;
 import examen.modulo.domain.entity.StudentAcademic;
 import examen.modulo.domain.entity.StudentDoctorado;
 import examen.modulo.domain.entity.StudentMaestria;
-import examen.modulo.domain.repository.ModuloRepository;
+import examen.modulo.domain.repository.StudentRepository;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.Set;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class StudentHibernateRepository implements ModuloRepository{
+public class StudentHibernateRepository implements StudentRepository{
     private List<Student> students;
     private IStudentCalculator iStudentCalculator;
     private StudentAcademic studentAcademic;
