@@ -1,0 +1,7 @@
+---
+applications:
+- name: examen-rfv
+  path: /home/travis/build/rfernandezv/ExamenFinal/target/ExamenFinal-0.1.jar
+  memory: 1024M
+  instances: 1
+  random-route: true
