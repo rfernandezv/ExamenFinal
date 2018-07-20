@@ -20,9 +20,13 @@ public class StudentHibernateRepository implements StudentRepository{
     private StudentAcademic studentAcademic;
     private List<IStudentRule> calculateRules;
     private IStudentRule iStudent;
+    private List<IStudentRule> studentsRules;
     
     public StudentHibernateRepository () {
-        students = new ArrayList();        
+        students = new ArrayList();       
+        studentsRules = new ArrayList();
+        //studentsRules.add(new StudentMaestria(1L,"Richar Marvin","Fernandez Vilchez","MAESTRIA"));
+        
         students.add(new Student(1L,"Richar Marvin","Fernandez Vilchez","MAESTRIA"));
         students.add(new Student(1L,"Lissi","Fernandez Vilchez","MAESTRIA"));
         students.add(new Student(2L,"Adaia","Silvera Ortiz","PREGRADO"));
